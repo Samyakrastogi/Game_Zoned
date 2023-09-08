@@ -1,0 +1,136 @@
+
+/* Footer CSS */
+* {
+	font-family: Open Sans;
+}
+
+.footer {
+	background: gray;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	height: 20vw;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 40px 50px;
+}
+
+.footer .fleft,
+.footer .fcenter,
+.footer .fright {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer .fleft {
+	width: 43%;
+}
+
+/* The company logo */
+.footer h3 {
+	color: orangered;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer h3 span {
+	color: skyblue;
+}
+
+/* Footer links */
+
+.footer .fleft .links {
+	color: #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+	font-size: larger;
+}
+
+.footer .fleft .links a {
+	display: inline-block;
+	line-height: 1.8;
+	font-weight: 400;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer .links a:before {
+	content: "|";
+	font-weight: 300;
+	font-size: 20px;
+	left: 0;
+	color: whitesmoke;
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.footer .links .link-1:before {
+	content: none;
+}
+
+.footer .footer-company-name {
+	color: wheat;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+.footer .fcenter {
+	margin-top: 10px;
+	width: 32%;
+	font-size: 22px;
+	color: whitesmoke;
+}
+
+.footer .fcenter .games {
+	font-size: 15px;
+	list-style-type: none;
+	margin-top: 10px;
+	line-height: 25px;
+}
+
+.footer .fcenter .games a {
+	color: wheat;
+}
+
+
+/* Footer Right */
+.footer .fright .heading {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 25px;
+	font-size: 22px;
+	color: whitesmoke
+}
+
+.footer .ficons {
+	margin-top: 25px;
+}
+
+.footer .ficons a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: gainsboro;
+	border-radius: 5px;
+
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 35px;
+	margin-top: -10px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+.footer .fright {
+	line-height: 25px;
+	font-size: 15px;
+	color: wheat
+}
+/* ====================================== */

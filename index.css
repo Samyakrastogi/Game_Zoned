@@ -1,0 +1,308 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* --blue: #3d5056;
+    --gray: #9da2a8;
+    --brown: #924e3b; */
+	font-family: "Quicksand", sans-serif;
+}
+
+
+
+/* carausal css */
+/* * {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+  }
+  
+  .carousel-frame {
+	position: relative;
+	width: 80%;
+	height: min(calc(90vh - 10px), 350px);
+	margin: 10px auto;
+	overflow: hidden;
+	box-shadow: inset 60px 0px 60px -60px rgb(0, 0, 0),
+	  inset -60px 0px 60px -60px rgb(0, 0, 0);
+	background-image: radial-gradient(
+	  circle,
+	  transparent,
+	  transparent 75%,
+	  rgba(0, 0, 0, 0.3)
+	);
+	background-color: white;
+  }
+  
+  .carousel-slide {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+  }
+  
+  .carousel-slide img {
+	min-width: 100%;
+	object-fit: cover;
+  }
+  
+  .carousel-prev {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	margin-top: -15px;
+	z-index: 10;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+  }
+  
+  .carousel-next {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	margin-top: -15px;
+	z-index: 10;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+  }
+  
+  .carousel-dots {
+	list-style: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	margin: 0 auto;
+	width: max(100px, 15%);
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .carousel-dots li {
+	width: 8px;
+	height: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-dots .active-dot {
+	background-color: rgba(255, 255, 255, 0.8);
+  } */
+/* -------------------------------------------------------------------------
+
+carusal 2
+*/
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  .img-slider {
+	  position: relative;
+	  width: 100%;
+	  height: 70vh;
+	  /* position: relative; 
+  }
+  .img-slider .slider-container {
+	  position: absolute;
+	  width: 300%;
+	  top: 0;
+	  left: 0;
+	  overflow: hidden;
+	  animation: slider 26s infinite;
+  }
+  .img-slider .slider-container .slide {
+	  position: relative;
+	  width: 33.33333333%;
+	  height: 100%;
+	  float: left;
+	  overflow: hidden
+  }
+  .img-slider .slider-container .slide img {
+	display: block;
+	width: 100%;
+	height: 100%
+  }
+  @keyframes slider {
+	  0%, 25%, 100%{left: 0}
+	  
+	  30%, 55%{left: -100%}
+	  
+	  60%, 85%{left: -200%}
+  }
+   */
+
+
+
+/* Intro CSS */
+.intro {
+	margin: auto;
+	padding-top: 30vh;
+	text-align: center;
+	height: 90vh;
+	width: 100%;
+	background-image: url("./assets/download4.jpg");
+	image-resolution: initial;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+
+}
+
+.intro h4 {
+	margin-top: 50px;
+	font-style: italic;
+	font-size: larger;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 800;
+	color: whitesmoke;
+}
+
+.intro h1 {
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 800;
+	color: red;
+}
+
+.intro button {
+	margin-top: 20px;
+	font-size: larger;
+	padding: 6px;
+	background-color: antiquewhite;
+	color: brown;
+	border-radius: 10px;
+	border: 3px solid black;
+}
+
+/* ========================================= */
+
+
+/* SLIDING carausal */
+
+/* .slider {
+    height: 300px;
+    display: grid;
+    place-items: center;
+  } */
+
+.slider {
+	width: 1100px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 15px;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transition: all 0.5s;
+}
+
+.slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	border-radius: 50%;
+	z-index: 10px;
+	cursor: pointer;
+	background-color: lightgrey;
+	font-size: 18px;
+}
+
+.btn:active {
+	transform: scale(1.1);
+}
+
+.btn-prev {
+	top: 45%;
+	left: 15px;
+}
+
+.btn-next {
+	top: 45%;
+	right: 15px;
+}
+
+/* ============================== */
+
+
+/* CARDS CSS */
+/* .cardheader{
+	color: purple;
+	font-weight: 600;
+	display: inline-block;
+} */
+.cards figure {
+	display: grid;
+	margin: auto;
+	border-radius: 15px;
+	overflow: hidden;
+	cursor: pointer;
+	height: 220px;
+	width: 400px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.cards figure>* {
+	grid-area: 1/1;
+}
+
+.cards figure figcaption {
+	display: grid;
+	align-items: end;
+	font-family: sans-serif;
+	font-size: 2.3rem;
+	font-weight: bolder;
+	color: black;
+	padding: .75rem;
+	background: var(--c, #fff5);
+	clip-path: inset(0 var(--_i, 100%) 0 0);
+}
+
+.cards figure:hover figcaption {
+	--_i: 0%;
+}
+
+.cards figure:hover img {
+	transform: scale(1.1);
+}
+
+.cards {
+	padding-top: 55px;
+	padding-bottom: 55px;
+	padding-right: 20px;
+	padding-left: -50px;
+	min-height: 60vh;
+	display: flex;
+	background: lavender;
+}
+
+.cards a {
+	text-decoration: none;
+}
+
+/* ============================ */

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://kit.fontawesome.com/42e3e833b9.js" crossorigin="anonymous"></script>
+
+    <title>Game_Zoned</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html"><img src="assets/logo.jpg" alt="Game_Zoned"></a>
+        <div id="space"></div>
+
+        <div id="home"><a href="index.html">Home</a></div>
+        <div id="contact"><a href="contact.html">Contact</a></div>
+        <div id="games"><a href="games.html">Games </a></div>
+        <!-- <div id="dropdown-container-div">
+            <button class="dropdown-button">Games </button>
+            <div class="dropdown-content">
+                <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+                <li><a href="#">Option 4</a></li>
+                </ul>
+            </div>
+        </div> -->
+    </nav>
+
+    <!-- carausal -->
+    <!-- <div class="carousel-frame">
+        <div class="carousel-slide">
+          <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/abstract.jpg" alt="abc"/>
+          <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/animal.jpg" alt="abc"/>
+          <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/architecture.jpg" alt="abc"/>
+          <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/leaf.jpg" alt="abc"/>
+          <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/space.jpg" alt="abc"/>
+          <img src="https://raw.githubusercontent.com/asbelljc/carousel-builder/main/sample/Images/twig.jpg" alt="abc"/>
+        </div>
+        <i class="carousel-prev fas fa-chevron-left"></i>
+        <i class="carousel-next fas fa-chevron-right"></i>
+        <ol class="carousel-dots">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div> -->
+
+    <!-- carausal 2 -->
+    <!-- <Section class="img-slider">
+    <div class="slider-container">
+      
+      <div class="slides">
+        <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778218/img-26_aw9alb.jpg" alt="abc">
+      </div>
+      
+      <div class="slides">
+        <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778117/img-23_pumtse.jpg"alt="abc">
+      </div>
+  
+      <div class="slides">
+        <img src="http://res.cloudinary.com/hurricane10/image/upload/v1499778109/img-20_ljchnk.jpg"alt="abc">
+      </div>
+      
+    </div>
+  </Section> -->
+
+
+    <!-- INTRO -->
+    <div class="intro">
+        <h1>GameZoned</h1>
+        <h4>A place for all you required games, enjoy and deep dive into gaming world.</h4>
+        <a href="#cards"><button class="button">Explore</button></a>
+    </div>
+
+    <!-- sliding carausal -->
+    <div class="slider">
+        <!-- slide 1 -->
+        <div class="slide">
+            <img src="./assets/bgmi logo.jpg" alt="" />
+        </div>
+
+        <!-- slide 2 -->
+        <div class="slide">
+            <img src="./assets/coc logo.jpg" alt="" />
+        </div>
+
+        <!-- slide 3 -->
+        <div class="slide">
+            <img src="./assets/coc logo1.jpg" alt="" />
+        </div>
+
+        <!-- slide 4 -->
+        <div class="slide">
+            <img src="./assets/coc2.jpg" alt="" />
+        </div>
+
+        <!-- Control buttons -->
+        <button class="btn btn-next"> > </button>
+        <button class="btn btn-prev">
+            < </button>
+    </div>
+    <script>
+        "use strict";
+        // Select all slides
+        const slides = document.querySelectorAll(".slide");
+
+        // loop through slides and set each slides translateX
+        slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${indx * 100}%)`;
+        });
+
+        // select next slide button
+        const nextSlide = document.querySelector(".btn-next");
+
+        // current slide counter
+        let curSlide = 0;
+        // maximum number of slides
+        let maxSlide = slides.length - 1;
+
+        // add event listener and navigation functionality
+        nextSlide.addEventListener("click", function () {
+            // check if current slide is the last and reset current slide
+            if (curSlide === maxSlide) {
+                curSlide = 0;
+            } else {
+                curSlide++;
+            }
+
+            //   move slide by -100%
+            slides.forEach((slide, indx) => {
+                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+            });
+        });
+
+        // select next slide button
+        const prevSlide = document.querySelector(".btn-prev");
+
+        // add event listener and navigation functionality
+        prevSlide.addEventListener("click", function () {
+            // check if current slide is the first and reset current slide to last
+            if (curSlide === 0) {
+                curSlide = maxSlide;
+            } else {
+                curSlide--;
+            }
+
+            //   move slide by 100%
+            slides.forEach((slide, indx) => {
+                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+            });
+        });
+
+    </script>
+    <!-- =============== -->
+
+
+    <!-- Cards -->
+    <div class="cards" id="cards">
+    <!-- HEADING ADD KRNI HAI -->
+
+        <!-- <div class="cardheader">Popular Games</div> -->
+        <a href="./bgmi.html">
+            <figure>
+                <img src="./assets/bgmi logo.jpg" alt="BGMI">
+                <figcaption>BGMI</figcaption>
+            </figure>
+        </a>
+
+        <a href="./coc.html">
+            <figure>
+                <img src="./assets/coc logo.jpg" alt="COC">
+                <figcaption>Clash of Clans</figcaption>
+            </figure>
+        </a>
+
+        <a href="./valorant.html">
+            <figure>
+                <img src="./assets/valo logo.jpg" alt="Valorant">
+                <figcaption>Valorant</figcaption>
+            </figure>
+        </a>
+    </div>
+    <!-- ====================== -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="fleft">
+            <h3>Game<span>Zoned</span></h3>
+            <p class="links">
+                <a href="index.html" class="link-1">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./games.html   ">Games</a>
+            </p>
+            <p class="footer-company-name">Trippy Octo © 2023</p>
+        </div>
+
+        <div class="fcenter">
+            <h4>GAMES </h4>
+            <ul class="games">
+                <li><a href="./bgmi.html">BGMI</a></li>
+                <li><a href="./coc.html">COC</a></li>
+                <li><a href="./valorant.html">Valorant</a></li>
+            </ul>
+        </div>
+
+        <div class="fright">
+
+            <p class="heading">Contact Information:</p>
+            <p>123 Main Street, City</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@example.com</p>
+
+            <div class="ficons">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/samyak-rastogi-962781211/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Samyakrastogi"><i class="fa fa-github"></i></a>
+
+            </div>
+        </div>
+
+    </footer>
+
+<!-- 1. HEADER ME DROPDOWN (Games me)
+     2. CARDS ME HEADING (SOME POPULAR GAMES)
+     3. Footer me contact info chamge krni hai
+     4. GameZoned ka color decide krna h and usko sab jgh apply krna hai
+ -->
+</body>
+
+</html>

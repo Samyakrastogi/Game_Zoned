@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="bgmi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+    <title>BGMI</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="index.html"><img src="assets/logo.jpg" alt="Game_Zoned"></a>
+        <div id="space"></div>
+
+        <div id="home"><a href="index.html">Home</a></div>
+        <div id="contact"><a href="contact.html">Contact</a></div>
+        <div id="games"><a href="games.html">Games </a></div>
+        <!-- <div id="games"><button class="dropbtn">Games </button>
+            <div class="dropdown-content">
+            <a href="#service1">Service 1</a>
+            <a href="#service2">Service 2</a>
+            <a href="#service3">Service 3</a>
+            </div>
+        </div> -->
+    </nav>
+    <!-- =================== -->
+
+    <!-- gamecard -->
+    <div class="container">
+        <div class="image">
+            <img class="gameimg" src="./assets/bgmi logo.jpg" alt="abc">
+        </div>
+        <div class="text">
+            <h1>BGMI</h1>
+            <p>Battlegrounds Mobile India (BGMI, previously known as PUBG Mobile India) is the Indian version of PUBG
+                Mobile, exclusively for players in India.The gameplay is specifically created for Indian Players, due to
+                controversial allegations of the data storage policy for India. It is an online multiplayer battle
+                royale game developed and published by Krafton. The game was initially released 2 July 2021 for Android
+                devices, <a href="https://en.wikipedia.org/wiki/Battlegrounds_Mobile_India">Continue..</a></p>
+            <a href="#video" class="button">Learn More</a>
+        </div>
+    </div>
+    <!--=================  -->
+
+    <!-- sliding carausal -->
+    <div class="slider">
+        <!-- slide 1 -->
+        <div class="slide">
+            <img src="./assets/bgmi logo.jpg" alt="" />
+        </div>
+
+        <!-- slide 2 -->
+        <div class="slide">
+            <img src="./assets/coc logo.jpg" alt="" />
+        </div>
+
+        <!-- slide 3 -->
+        <div class="slide">
+            <img src="./assets/coc logo1.jpg" alt="" />
+        </div>
+
+        <!-- slide 4 -->
+        <div class="slide">
+            <img src="./assets/coc2.jpg" alt="" />
+        </div>
+
+        <!-- Control buttons -->
+        <button class="btn btn-next"> > </button>
+        <button class="btn btn-prev">
+            < </button>
+    </div>
+    <script>
+        "use strict";
+        // Select all slides
+        const slides = document.querySelectorAll(".slide");
+
+        // loop through slides and set each slides translateX
+        slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${indx * 100}%)`;
+        });
+
+        // select next slide button
+        const nextSlide = document.querySelector(".btn-next");
+
+        // current slide counter
+        let curSlide = 0;
+        // maximum number of slides
+        let maxSlide = slides.length - 1;
+
+        // add event listener and navigation functionality
+        nextSlide.addEventListener("click", function () {
+            // check if current slide is the last and reset current slide
+            if (curSlide === maxSlide) {
+                curSlide = 0;
+            } else {
+                curSlide++;
+            }
+
+            //   move slide by -100%
+            slides.forEach((slide, indx) => {
+                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+            });
+        });
+
+        // select next slide button
+        const prevSlide = document.querySelector(".btn-prev");
+
+        // add event listener and navigation functionality
+        prevSlide.addEventListener("click", function () {
+            // check if current slide is the first and reset current slide to last
+            if (curSlide === 0) {
+                curSlide = maxSlide;
+            } else {
+                curSlide--;
+            }
+
+            //   move slide by 100%
+            slides.forEach((slide, indx) => {
+                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+            });
+        });
+
+    </script>
+    <!-- =============== -->
+
+    <!-- video -->
+    <div class="video" id="video">
+        <div class="v1" style="display: flex;">
+
+            <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 50px;" src="https://www.youtube.com/embed/sivBwvsm9z4"
+                frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 25px;" src="https://www.youtube.com/embed/v8e5K3CNfPc"
+                frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 25px;" src="https://www.youtube.com/embed/xtEl1u_7QHw"
+                frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="v2" style="display: flex;">
+            <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 50px;" src="https://www.youtube.com/embed/rWCWMBsduvc"
+                frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 25px;" src="https://www.youtube.com/embed/r25QFtM6Ff4"
+                frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+            <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 25px;" src="https://www.youtube.com/embed/poUVFYOAHPI"
+                frameborder="2" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="fleft">
+            <h3>Game<span>Zoned</span></h3>
+            <p class="links">
+                <a href="index.html" class="link-1">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./games.html   ">Games</a>
+            </p>
+            <p class="footer-company-name">Trippy Octo © 2023</p>
+        </div>
+
+        <div class="fcenter">
+            <h4>GAMES </h4>
+            <ul class="games">
+                <li><a href="./bgmi.html">BGMI</a></li>
+                <li><a href="./coc.html">COC</a></li>
+                <li><a href="./valorant.html">Valorant</a></li>
+            </ul>
+        </div>
+
+        <div class="fright">
+
+            <p class="heading">Contact Information:</p>
+            <p>123 Main Street, City</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@example.com</p>
+
+            <div class="ficons">
+
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/samyak-rastogi-962781211/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Samyakrastogi"><i class="fa fa-github"></i></a>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
