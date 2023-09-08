@@ -8,7 +8,9 @@
 	font-family: "Quicksand", sans-serif;
 }
 
-
+body{
+	background-color: rgb(212, 254, 218);
+}
 
 /* carausal css */
 /* * {
@@ -146,7 +148,7 @@ carusal 2
 	text-align: center;
 	height: 90vh;
 	width: 100%;
-	background-image: url("./assets/download4.jpg");
+	background-image: url("./assets/images/Background2.jpg");
 	image-resolution: initial;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -157,29 +159,33 @@ carusal 2
 
 .intro h4 {
 	margin-top: 50px;
-	font-style: italic;
-	font-size: larger;
+	font-style: oblique;
 	margin-left: auto;
 	margin-right: auto;
-	font-weight: 800;
-	color: whitesmoke;
+	font-weight: 900;
+	font-size: x-large;
+	color: beige
 }
 
 .intro h1 {
+	margin-top: -70px;
 	margin-left: auto;
 	margin-right: auto;
 	font-weight: 800;
-	color: red;
+	color: yellow;
+	font-size: 50px;
+	text-decoration:  underline;
 }
 
 .intro button {
 	margin-top: 20px;
 	font-size: larger;
-	padding: 6px;
-	background-color: antiquewhite;
-	color: brown;
+	padding: 10px 12px;
+	background-color: aqua	;
+	color: black;
+	font-size: 22px;
 	border-radius: 10px;
-	border: 3px solid black;
+	/* border: 3px solid black; */
 }
 
 /* ========================================= */
