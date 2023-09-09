@@ -35,7 +35,7 @@
     <!-- gamecard -->
     <div class="container">
         <div class="image">
-            <img class="gameimg" src="./assets/bgmi logo.jpg" alt="abc">
+            <img class="gameimg" src="./assets/images/valo.jpg" alt="abc">
         </div>
         <div class="text">
             <h1>Valorant</h1>
@@ -50,25 +50,25 @@
 
     <!-- sliding carausal -->
     <div class="slider">
-        <!-- slide 1 -->
         <div class="slide">
-            <img src="./assets/bgmi logo.jpg" alt="" />
+            <img src="./assets/images/valo4.jpg" alt="" />
         </div>
 
-        <!-- slide 2 -->
         <div class="slide">
-            <img src="./assets/coc logo.jpg" alt="" />
+            <img src="./assets/images/valo1.jpg" alt="" />
         </div>
 
-        <!-- slide 3 -->
         <div class="slide">
-            <img src="./assets/coc logo1.jpg" alt="" />
+            <img src="./assets/images/valo2.jpg" alt="" />
         </div>
 
-        <!-- slide 4 -->
         <div class="slide">
-            <img src="./assets/coc2.jpg" alt="" />
+            <img src="./assets/images/valo5.jpg" alt="" />
         </div>
+        <div class="slide">
+            <img src="./assets/images/valo3.jpg" alt="" />
+        </div>
+
 
         <!-- Control buttons -->
         <button class="btn btn-next"> > </button>
@@ -77,50 +77,38 @@
     </div>
     <script>
         "use strict";
-        // Select all slides
         const slides = document.querySelectorAll(".slide");
 
-        // loop through slides and set each slides translateX
         slides.forEach((slide, indx) => {
             slide.style.transform = `translateX(${indx * 100}%)`;
         });
 
-        // select next slide button
         const nextSlide = document.querySelector(".btn-next");
 
-        // current slide counter
         let curSlide = 0;
-        // maximum number of slides
         let maxSlide = slides.length - 1;
 
-        // add event listener and navigation functionality
         nextSlide.addEventListener("click", function () {
-            // check if current slide is the last and reset current slide
             if (curSlide === maxSlide) {
                 curSlide = 0;
             } else {
                 curSlide++;
             }
 
-            //   move slide by -100%
             slides.forEach((slide, indx) => {
                 slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
             });
         });
 
-        // select next slide button
         const prevSlide = document.querySelector(".btn-prev");
 
-        // add event listener and navigation functionality
         prevSlide.addEventListener("click", function () {
-            // check if current slide is the first and reset current slide to last
             if (curSlide === 0) {
                 curSlide = maxSlide;
             } else {
                 curSlide--;
             }
 
-            //   move slide by 100%
             slides.forEach((slide, indx) => {
                 slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
             });
@@ -142,7 +130,7 @@
                 allowfullscreen></iframe>
 
             <iframe style="height: 200px; width: 350px; margin: 20px; margin-left: 25px;"
-                src="https://www.youtube.com/embed/n1Jb1VNM" frameborder="2" allow="autoplay; encrypted-media"
+                src="https://www.youtube.com/embed/MPemOdTvHTk" frameborder="2" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
         </div>
         <div class="v2" style="display: flex;">
@@ -170,7 +158,7 @@
             <p class="links">
                 <a href="index.html" class="link-1">Home</a>
                 <a href="./contact.html">Contact</a>
-                <a href="./games.html   ">Games</a>
+                <a href="./index.html">Games</a>
             </p>
             <p class="footer-company-name">Trippy Octo © 2023</p>
         </div>
@@ -180,7 +168,7 @@
             <ul class="games">
                 <li><a href="./bgmi.html">BGMI</a></li>
                 <li><a href="./coc.html">COC</a></li>
-                <li><a href="./valorant.html">Valorant</a></li>
+                <li><a href="./valorant.html#cards">Valorant</a></li>
             </ul>
         </div>
 
