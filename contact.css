@@ -1,4 +1,3 @@
-
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(  https://media.istockphoto.com/id/1408433277/photo/concept-of-contact-us-wooden-cube-blocks-with-contact-icons-on-computer-keyboard-symbol-of.webp?b=1&s=170667a&w=0&k=20&c=_jxgubowhFrjSxlXAOS3MJJjbxCwhJmw2n23mzlTWhE=);
+  background-image: url(https://media.istockphoto.com/id/1408433277/photo/concept-of-contact-us-wooden-cube-blocks-with-contact-icons-on-computer-keyboard-symbol-of.webp?b=1&s=170667a&w=0&k=20&c=_jxgubowhFrjSxlXAOS3MJJjbxCwhJmw2n23mzlTWhE=);
   /* https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 */
   /* https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60 */
   /* https://media.istockphoto.com/id/1408433277/photo/concept-of-contact-us-wooden-cube-blocks-with-contact-icons-on-computer-keyboard-symbol-of.webp?b=1&s=170667a&w=0&k=20&c=_jxgubowhFrjSxlXAOS3MJJjbxCwhJmw2n23mzlTWhE= */
@@ -28,7 +27,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 section {
@@ -62,7 +61,7 @@ section {
   color: #FFF;
 }
 
-.row  {
+.row {
   display: flex;
   flwx-wrap: wrap;
   align-items: center;
@@ -128,7 +127,7 @@ section {
 }
 
 .contact-form .input-box input,
-.contact-form .input-box textarea{
+.contact-form .input-box textarea {
   width: 100%;
   padding: 5px 0;
   font-size: 16px;
@@ -150,15 +149,14 @@ section {
   color: #666;
 }
 
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box textarea:focus ~ span{
+.contact-form .input-box input:focus~span,
+.contact-form .input-box textarea:focus~span {
   color: #e91e63;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
-.contact-form .input-box input[type="submit"]
-{
+.contact-form .input-box input[type="submit"] {
   width: 100%;
   background: #00bcd4;
   color: #FFF;
@@ -170,8 +168,7 @@ section {
   transition: 0.5s;
 }
 
-.contact-form .input-box input[type="submit"]:hover
-{
+.contact-form .input-box input[type="submit"]:hover {
   background: #FFF;
   color: #00bcd4;
 }
@@ -181,18 +178,17 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .row {
     flex-direction: column;
   }
-  
+
   .contact-info {
     margin-bottom: 40px;
     width: 100%;
   }
-  
+
   .contact-form {
     width: 100%;
   }
 }
- 

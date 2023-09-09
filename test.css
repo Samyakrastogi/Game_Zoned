@@ -1,4 +1,3 @@
-
 .container {
   /* background-color: antiquewhite; */
   display: flex;
@@ -11,8 +10,8 @@
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid black; 
-  border-radius: 10px;   
+  border: 5px solid black;
+  border-radius: 10px;
 }
 
 .button {
@@ -29,16 +28,16 @@
   border-radius: 5px;
 }
 
-body{
+body {
   background-color: antiquewhite;
 }
 
-.text{
+.text {
   text-align: center;
 
 }
 
-.text h1{
+.text h1 {
   margin-top: -80px;
   margin-bottom: 30px;
   font-style: italic;
@@ -47,7 +46,7 @@ body{
 
 .gameimg {
   max-width: 300px;
-  max-height:400px;
+  max-height: 400px;
   margin-left: 20px;
   margin-right: auto;
   border-radius: 5px;
@@ -69,57 +68,56 @@ body{
 } */
 
 .slider {
-width: 1100px;
-height: 400px;
-position: relative;
-overflow: hidden;
-border-radius: 15px;
-align-items: center;
-margin-top: 50px;
-margin-bottom: 50px;
-margin-left: auto;
-margin-right: auto;
+  width: 1100px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slide {
-width: 100%;
-height: 100%;
-position: absolute;
-transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
 }
 
 .slide img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .btn {
-position: absolute;
-width: 40px;
-height: 40px;
-padding: 10px;
-border: none;
-border-radius: 50%;
-z-index: 10px;
-cursor: pointer;
-background-color: lightgrey;
-font-size: 18px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: lightgrey;
+  font-size: 18px;
 }
 
 .btn:active {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .btn-prev {
-top: 45%;
-left: 15px;
+  top: 45%;
+  left: 15px;
 }
 
 .btn-next {
-top: 45%;
-right: 15px;
+  top: 45%;
+  right: 15px;
 }
 
 /* ============================== */
- 

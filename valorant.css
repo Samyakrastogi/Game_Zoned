@@ -123,8 +123,8 @@
 	border-radius: 50%;
 	z-index: 10px;
 	cursor: pointer;
-	background-color: lightgrey;
-	font-size: 18px;
+	background-color: white;
+	font-size: 20px;
 }
 
 .btn:active {
@@ -134,11 +134,15 @@
 .btn-prev {
 	top: 45%;
 	left: 15px;
+	color: black;
+	font-weight: bolder;
 }
 
 .btn-next {
 	top: 45%;
 	right: 15px;
+	color: black;
+	font-weight: bolder;
 }
 
 /* ============================== */
